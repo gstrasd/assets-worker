@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.1-dev-01265" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libraries\src\Library.Hosting\Library.Hosting.csproj" />
+    <ProjectReference Include="..\..\..\libraries\src\Library.Messaging\Library.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>

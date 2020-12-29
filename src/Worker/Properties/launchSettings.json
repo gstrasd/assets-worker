@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "assets_worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Local"
+      },
+      "dotnetRunMessages": "true"
+    }
+  }
+}

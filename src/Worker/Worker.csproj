@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>dotnet-assets_worker-FFFEF3D5-3BED-4D5F-9C8E-82E302E03245</UserSecretsId>
+    <RootNamespace>Worker</RootNamespace>
+    <Configurations>Debug;Release;Local</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.1-dev-01265" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libraries\src\Library.Hosting\Library.Hosting.csproj" />
+    <ProjectReference Include="..\Application.Domain\Application.Domain.csproj" />
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+</Project>
